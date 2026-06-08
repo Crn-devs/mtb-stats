@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MTB Career Tracker</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <main class="container">
+
+        <header class="hero">
+            <h1>🚵 MTB Career Tracker</h1>
+            <p>Official statistics from years of questionable decisions.</p>
+        </header>
+
+        <section class="stats-grid">
+
+            <article class="stat-card">
+                <span class="label">Jumps Landed</span>
+                <div class="counter">
+                    <button class="counter-btn minus" data-target="jumps">−</button>
+
+                    <span class="value" id="jumps">0</span>
+
+                    <button class="counter-btn plus" data-target="jumps">+</button>
+                </div>
+            </article>
+
+            <article class="stat-card danger">
+                <span class="label">Bones Broken</span>
+                <div class="counter">
+                    <button class="counter-btn minus" data-target="bones">−</button>
+
+                    <span class="value" id="bones">3</span>
+
+                    <button class="counter-btn plus" data-target="bones">+</button>
+                </div>
+            </article>
+
+            <article class="stat-card">
+                <span class="label">Trees Hit</span>
+                <div class="counter">
+                    <button class="counter-btn minus" data-target="trees">−</button>
+
+                    <span class="value" id="trees">3</span>
+
+                    <button class="counter-btn plus" data-target="trees">+</button>
+                </div>
+            </article>
+
+            <article class="stat-card">
+                <span class="label">Bikes Destroyed</span>
+                <div class="counter">
+                    <button class="counter-btn minus" data-target="bikes">−</button>
+
+                    <span class="value" id="bikes">3</span>
+
+                    <button class="counter-btn plus" data-target="bikes">+</button>
+                </div>
+            </article>
+
+        </section>
+
+        <section class="survival-section">
+
+            <h2>Current Survival Rating</h2>
+
+            <div class="survival-score">
+                <span id="survival-rate">0%</span>
+            </div>
+
+            <div id="status-badge" class="badge">
+                Calculating...
+            </div>
+
+        </section>
+
+        <section class="simulator">
+
+            <h2>Should I Send It?</h2>
+
+            <button id="sendBtn">
+                SEND IT
+            </button>
+
+            <div class="confidence-meter">
+                Confidence Level:
+                <span id="confidence">0%</span>
+            </div>
+
+            <div id="result" class="result">
+                Awaiting poor decisions...
+            </div>
+
+        </section>
+
+        <button id="resetBtn" class="reset-btn">
+            🩺 Delete Medical Records
+        </button>
+
+
+        <section class="birthday-section">
+
+            <h2>🎉 Happy Birthday Bro 🎉</h2>
+
+            <p>
+                Another year older, another year closer to becoming
+                more titanium than human.
+            </p>
+
+            <p>
+                May your jumps be smooth, your tyres stay inflated,
+                and your collarbones remain structurally sound. Well and your wrists
+            </p>
+
+            <div class="app-list">
+
+                <h3>Official Rider Toolkit</h3>
+
+                <ul>
+                    <li>
+                        📍 <a href="https://www.trailforks.com" target="_blank">
+                            Trailforks
+                        </a>
+                    </li>
+
+                    <li>
+                        🗺️ <a href="https://www.komoot.com" target="_blank">
+                            Komoot
+                        </a>
+                    </li>
+
+                    <li>
+                        📊 <a href="https://www.strava.com" target="_blank">
+                            Strava
+                        </a>
+                    </li>
+
+                    <li>
+                        🛠️ <a href="https://www.sram.com/en/sram/axs" target="_blank">
+                            SRAM AXS
+                        </a>
+                    </li>
+
+                    <li>
+                        🩹 <a href="https://www.nhs.uk/nhs-app/" target="_blank">
+                            NHS App
+                        </a>
+                    </li>
+
+                    <li>
+                        🚨 <a href="https://what3words.com" target="_blank">
+                            what3words
+                        </a>
+                        <br>
+                        <small>
+                            For when "I'm somewhere in the woods" isn't enough information.
+                        </small>
+                    </li>
+
+                    <li>
+                        ⛑️ <a href="https://www.icecard.co.uk" target="_blank">
+                            ICE (In Case of Emergency)
+                        </a>
+                        <br>
+                        <small>
+                            Because apparently riding within your limits wasn't an option.
+                        </small>
+                    </li>
+                </ul>
+
+            </div>
+
+            <p class="small-print">
+                *May not actually exist, useful right?.
+            </p>
+
+        </section>
+
+        <div class="sponsors">
+            <h3>Proudly Sponsored By</h3>
+
+            <div class="sponsor-grid">
+                <span>🦴 Yorkshire Orthopaedics</span>
+                <span>🌲 Local Trees Association</span>
+                <span>🚑 NHS Trauma Unit</span>
+                <span>🔩 Titanium Holdings Ltd.</span>
+            </div>
+        </div>
+
+        <div class="birthday-photo">
+            <img src="images/brother.jpg" alt="Birthday Rider">
+            <p class="career-warning">
+                Rider shown above. Statistics independently verified by local hospitals.
+            </p>
+        </div>
+
+
+    </main>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
